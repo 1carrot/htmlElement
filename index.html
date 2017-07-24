@@ -1,44 +1,64 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Html 元素小站</title>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="js/jquery-3.2.1.min.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>褚翔鸿</title>
+  <meta name="keywords" content="html元素学习" />
+  <meta name="description" content="专注于HTML5" />
+  <link rel="stylesheet" href="css/indexstyle.css">
+  <style>body{font-family: "microsoft yahei";}</style>
+</head>
+<body>
+  <div class="site-content">
+    <div class="columns">
+      <div class="column">
+        <h2 class="section-title">Demo 1</h2>
 
-    <!--导航栏-->
-    <nav>
 
-    </nav>
-    <section class="row">
-      <button>开始学习</button>
-      <!--简单路径-->
-      <div id="simple1" class="simple">
-        <button></button>
+        <div class="project-list">
+          <div class="project">
+            <div class="project__card">
+              <a href="" class="project__image"><img src="img/海天.jpeg" width=600 height=400 alt=""></a>
+              <div class="project__detail">
+                <h2 class="project__title"><a href="#">建立完整html</a></h2>
+                <small class="project__category"><a href="#">查看更多</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <!--创建路径-->
-      <div id="set2" class="set">
-        <button></button>
-      </div>
-      <!--种类路径-->
-      <div id="kind3" class="kind">
-        <button></button>
-      </div>
-      <!--页脚-->
-      <footer></footer>
-    </section>
-    <script>
-      $(document).ready(function(){
-      $("button").click(function(){
-      $("#smiple1").fadeIn("slow");
-      $("#set2").fadeIn("slow");
-      $("#kind3").fadeIn("slow");
-        });
+      <div class="column2">
+				<h2 class="section-title">Demo 2</h2>
+				<div class="project-list">
+					<div class="project">
+						<div class="project__card">
+							<a href="" class="project__image"><img src="img/海天.jpeg" width=600 height=400 alt=""></a>
+							<div class="project__detail">
+								<h2 class="project__title"><a href="#">初探HTML</a></h2>
+								<small class="project__category"><a href="#">粗略了解html</a></small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.hover3d.js" ></script>
+
+  <script>
+    $(document).ready(function(){
+      $(".project").hover3d({
+        selector: ".project__card",
+        shine: false,
       });
-    </script>
+
+    });
+
+  </script>
   </body>
 
 </html>
