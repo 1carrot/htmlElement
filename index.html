@@ -6,11 +6,29 @@
   <meta name="keywords" content="html元素学习" />
   <meta name="description" content="专注于HTML5" />
   <link rel="stylesheet" href="css/indexstyle.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
   <style>body{font-family: "microsoft yahei";}</style>
 </head>
-<body>
+<body style="background-image:/htmlElement/img/backgroundimg.jpg ;">
   <header>
-    <nav></nav>
+               
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="/htmlElement/img/是_is13.svg" alt="">
+        <h1 class="header__title">
+          titles
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">News</a></li>
+        <li class="nav__item"><a href="#">哈哈</a></li>
+        <li class="nav__item"><a href="#">嘻嘻</a></li>
+        <li class="nav__item"><a href="#">Blog</a></li>
+      </ul>
+    </nav>
   </header>
   <main class="site-content">
     <div class="columns">
@@ -46,8 +64,23 @@
 				</div>
 			</div>
 		</div>
+ 			
 	</main>
+	<footer class="tm-footer">
 
+                <div class="tm-social-icons-container text-xs-center">
+                    <!--<a href="#" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-behance"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-linkedin"></i></a>-->
+              </div>
+
+                <p class="tm-copyright-text">Copyright &copy; <span class="tm-copyright-year">2017</span> 元素
+
+                 | Design: <a href="https://github.com/cxh123789" target="_parent">褚翔鸿</a></p>
+
+            </footer>
 
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery.hover3d.js" ></script>
